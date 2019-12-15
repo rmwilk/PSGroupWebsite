@@ -10,8 +10,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
     <!-- / Header and Footer -->
-    <link rel="stylesheet" href="../styles/page2.css">
-    <link rel="stylesheet" type="text/css"  href="../styles/global.css">
+    <link rel="stylesheet" type="text/css" href="../styles/page2.css">
+    <link rel="stylesheet" type="text/css" href="../styles/global.css">
+    <script src="../scripts/scripts.js"></script>
 	<title>The Tracker - Register Page</title>
 	<link rel="icon" type="image/jpg" href="../images/taskListIcon.jpg">
 </head>
@@ -42,26 +43,26 @@
 				<div class="form-group">
 					<div class="input-group">
 						<span class="input-group-addon"><i class="fa fa-user"></i></span>
-						<input type="text" class="form-control" name="username" placeholder="Username" required="required">
+						<input type="text" class="form-control" id="username" name="username" placeholder="Username" required="required">
 					</div>
 				</div>
 				<div class="form-group">
 					<div class="input-group">
 						<span class="input-group-addon"><i class="fa fa-location-arrow"></i></span>
-						<input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
+						<input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required="required">
 					</div>
 				</div>
 				<div class="form-group">
 					<div class="input-group">
 						<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-						<input type="password" class="form-control" name="password" placeholder="Password" required="required">
+						<input type="password" class="form-control" id="password" name="password" placeholder="Password" required="required">
 					</div>
 				</div>
 				<div class="form-group">
 					<label><input type="checkbox" name="remember"> Remember me</label>
 				</div>
 				<div class="form-group">
-					<button type="submit" class="btn btn-success">Sign Up</button>
+					<input type="button" class="btn btn-success" value="Sign Up" onclick="register()">
 				</div>
 			</form>
 		</div>
