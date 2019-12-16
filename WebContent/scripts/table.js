@@ -14,11 +14,18 @@ function appendRow() {
     row.id = "row1" + i;
     ++i; //increment rowID
 
+    //Center values in table cell
+    cell1.style = "text-align: center";
+    cell2.style = "text-align: center";
+    cell3.style = "text-align: center";
+    cell4.style = "text-align: center";
+    cell5.style = "text-align: center";
+
     //Create checkbox
-    var checkBox = '<input type="checkbox" id="cBox" onclick="crossOut(\'' + row.id + '\')" value="no">';
+    var checkBox = '<input type="checkbox" class="custom-control-input" id="defaultChecked2" onclick="crossOut(\'' + row.id + '\')" value="no">';
     
     //Create delete
-    var deleteButton = '<button type="button" onclick="deleteRow(this)">Delete</button>';
+    var deleteButton = '<button class="btn btn-secondary type="button" onclick="deleteRow(this)"><span class="glyphicon glyphicon-trash"></span></button>';
 
     cell1.innerHTML = checkBox;
     cell2.innerHTML = document.getElementById("activity").value;
