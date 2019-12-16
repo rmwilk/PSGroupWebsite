@@ -1,26 +1,33 @@
 
 /* <!-- Header and Footer -->*/
 * {box-sizing: border-box;}
-
+html {	
+}
 body { 
   margin: 0;
+  padding: 0;
   background-color: #e8e8e8;
+  background: url('../images/list1.jpg');
   font-family: Arial, Helvetica, sans-serif;
 }
-
+#todoIMG {
+	max-height: 50px;
+	width: auto;
+	margin-bottom: 15px;
+}
 .header {
 	 overflow: hidden;
  	 background-color: #5588a3;
- 	 padding: 20px 10px;
-  
+ 	 /*padding: 20px 10px;*/
+  	 max-height: 75px;
 }
 .footer {
-	height:80px;
-	width:100%;
-	position:fixed;
+	height:40px;
+	/*width:100%;
+	//position:fixed;*/
 	bottom: 0;
     text-align: center;
-	background-color: #5588a3;
+	/*background-color: #5588a3;*/
 	font-style: italic;
 	color: #e8e8e8;
   	padding: 20px 10px;
@@ -38,7 +45,7 @@ body {
 }
 
 .header a.logo {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -60,4 +67,17 @@ body {
 color: #e8e8e8;
 display: inline-block;
 font-family: cursive;
+}
+.form-container {
+  border: 0 px solid;
+  padding: 40px 50px;
+  margin-top: 5vh;
+  -webkit-box-shadow: -2px 7px 19px 9px rgba(128,0,0,1);
+  -moz-box-shadow: -2px 7px 19px 9px rgba(128,0,0,1);
+  box-shadow: -2px 7px 19px 9px rgba(128,0,0,1);
+  background-color: white;
+}
+.list {
+  width: 100%;
+  height: auto;
 }
