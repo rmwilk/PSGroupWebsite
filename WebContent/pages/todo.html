@@ -16,13 +16,14 @@
     <script src="../scripts/scripts.js"></script>
     <!-- this is the script for the do task functionality -->
     <script src=../scripts/table.js></script>
-    <style>
+  <!--  <style>
         table,
         td,
         th {
             border: 1px solid black;
         }
     </style>
+-->
 </head>
 <body>
 	<header class="header">
@@ -43,7 +44,6 @@
 	</header>
 	<div class="form-container list">
     <form>
-
         <label for="activity">Activity</label>
         <input type="text" id="activity" name="firstname" pattern="^[a-z ,.'-]+$" title="Enter a activity" required>
 		
@@ -62,11 +62,11 @@
 
     <br />
 
-    <table id="todoTable">
+    <table id="todoTable"  class="table table-striped">
 
         <thead>
-            <th style="text-align: center; padding-right: 5%; padding-left: 5%;"><span class="glyphicon glyphicon-check"></span></th>
-            <th>Activity</th>
+            <th><span class="glyphicon glyphicon-check"></span></th>
+            <th >Activity</th>
             <th>Description</th>
             <th>Priority</th>
             <th>Delete</th>

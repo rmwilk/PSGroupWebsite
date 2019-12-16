@@ -7,8 +7,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: #e8e8e8;
-  background: url('../images/list1.jpg');
   font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+   font-family: Arial, Helvetica, sans-serif; 
 }
 #todoIMG {
 	max-height: 50px;
@@ -23,13 +25,13 @@ body {
 }
 .footer {
 	height:40px;
-	/*width:100%;
-	//position:fixed;*/
+	width:100%;
+	position:fixed;
 	bottom: 0;
     text-align: center;
 	/*background-color: #5588a3;*/
 	font-style: italic;
-	color: #e8e8e8;
+	color: black;
   	padding: 20px 10px;
 }
 
@@ -72,12 +74,21 @@ font-family: cursive;
   border: 0 px solid;
   padding: 40px 50px;
   margin-top: 5vh;
+/*
   -webkit-box-shadow: -2px 7px 19px 9px rgba(128,0,0,1);
   -moz-box-shadow: -2px 7px 19px 9px rgba(128,0,0,1);
   box-shadow: -2px 7px 19px 9px rgba(128,0,0,1);
+*/
   background-color: white;
 }
 .list {
   width: 100%;
   height: auto;
+}
+.btn{        
+       font-size: 16px;
+       font-weight: bold;
+	background: #5588a3;
+	border: none;
+	min-width: 140px;
 }

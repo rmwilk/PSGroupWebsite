@@ -14,13 +14,6 @@ function appendRow() {
     row.id = "row1" + i;
     ++i; //increment rowID
 
-    //Center values in table cell
-    cell1.style = "text-align: center";
-    cell2.style = "text-align: center";
-    cell3.style = "text-align: center";
-    cell4.style = "text-align: center";
-    cell5.style = "text-align: center";
-
     //Create checkbox
     var checkBox = '<input type="checkbox" class="custom-control-input" id="defaultChecked2" onclick="crossOut(\'' + row.id + '\')" value="no">';
     
@@ -32,6 +25,9 @@ function appendRow() {
     cell3.innerHTML = document.getElementById("description").value;
     cell4.innerHTML = document.getElementById("priority").value;
     cell5.innerHTML = deleteButton;
+    document.getElementById("activity").value = "";
+    document.getElementById("description").value = "";
+    document.getElementById("priority").value = "Normal";
 }
 
 function deleteRow(r) {
