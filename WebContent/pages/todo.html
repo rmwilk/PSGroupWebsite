@@ -14,6 +14,15 @@
     <!-- / Header and Footer -->
     <link rel="stylesheet" type="text/css"  href="../styles/global.css">
     <script src="../scripts/scripts.js"></script>
+    <!-- this is the script for the do task functionality -->
+    <script src=../scripts/table.js></script>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
 	<header class="header">
@@ -33,6 +42,39 @@
 		  </div>
 	</header>
 	<!-- Add your content in between -->
+    <form>
+
+        <label for="activity">Activity</label>
+        <input type="text" id="activity" name="firstname" pattern="^[a-z ,.'-]+$" title="Enter a activity" required>
+
+        <label for="description">Description</label>
+        <input type="text" id="description" name="lastname" pattern="^[a-z ,.'-]+$" title="Enter a description"
+            required>
+
+        <button type="button" onclick=appendRow()>Add</button>
+
+    </form>
+
+    <br />
+
+    <table id="todoTable">
+
+        <thead>
+            <th>checkbox?</th>
+            <th>Activity</th>
+            <th>Description</th>
+            <th>delete</th>
+        </thead>
+        <tbody>
+            <!-- <tr>
+                <td>this checkbox</td>
+                <td>activity</td>
+                <td>description</td>
+                <td>deleteme</td>
+            </tr> -->
+        </tbody>
+
+    </table>
 	<footer class="footer">
 		Copyright 2019 @ Flora Familia
 	</footer>
