@@ -10,14 +10,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
     <!-- / Header and Footer -->
-    <link rel="stylesheet" type="text/css" href="../styles/page2.css">
+    <link rel="stylesheet" type="text/css" href="../styles/registration.css">
     <link rel="stylesheet" type="text/css" href="../styles/global.css">
     <script src="../scripts/scripts.js"></script>
-	<title>The Tracker - Register Page</title>
+	<title>The Tracker - Register</title>
 	<link rel="icon" type="image/jpg" href="../images/taskListIcon.jpg">
 </head>
+<body>
 	<header class="header">
-	<img id="todoIMG" src="https://icon-library.net//images/task-list-icon/task-list-icon-2.jpg" width="150" />
+	<img id="todoIMG" src="../images/taskListIcon.jpg" width="150" />
 	<h1 class="head">THE TRACKER</h1>
 	  <div class="header-right">
 	          <a href="./index.html" class="btn btn-info btn-lg">
@@ -33,42 +34,43 @@
 	          	To-Do List
 	        </a>
 	  </div>
-</header>
-	<body>
-		<div class="signup-form">
-			<form action="/examples/actions/confirmation.php" method="post">
-				<h2>Sign Up</h2>
-				<p>Please fill in this form to create an account!</p>
-				<hr>
-				<div class="form-group">
-					<div class="input-group">
-						<span class="input-group-addon"><i class="fa fa-user"></i></span>
-						<input type="text" class="form-control" id="username" name="username" placeholder="Username" required="required">
+	</header>
+		<div class="content container-fluid list">
+			<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-12"></div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+			<!-- <div class="signup-form"> -->
+				<form class="form-container">
+					<h1>Create an Account</h1>
+					<h3>Please fill in this form to create an account</h3>
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-user"></i></span>
+							<input type="text" class="form-control" id="username" name="username" placeholder="Username" required="required">
+						</div>
 					</div>
-				</div>
-				<div class="form-group">
-					<div class="input-group">
-						<span class="input-group-addon"><i class="fa fa-location-arrow"></i></span>
-						<input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required="required">
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-location-arrow"></i></span>
+							<input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required="required">
+						</div>
 					</div>
-				</div>
-				<div class="form-group">
-					<div class="input-group">
-						<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-						<input type="password" class="form-control" id="password" name="password" placeholder="Password" required="required">
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+							<input type="password" class="form-control" id="password" name="password" placeholder="Password" required="required">
+						</div>
 					</div>
-				</div>
-				<div class="form-group">
-					<label><input type="checkbox" name="remember"> Remember me</label>
-				</div>
-				<div class="form-group">
-					<input type="button" class="btn btn-success" value="Sign Up" onclick="register()">
-				</div>
-			</form>
+					<div class="form-group">
+						<input type="button" class="btn btn-block" value="Sign Up" onclick="register()">
+					</div>
+				</form>
+			</div>
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+            </div>
 		</div>
-    </body>
 	<footer class="footer">
 		Copyright 2019 @ Flora Familia
 	</footer>
-	</body>
+    </body>
 </html>

@@ -1,17 +1,21 @@
 
-/* <!-- Header and Footer -->*/
 * {box-sizing: border-box;}
-html {	
-}
+
 body { 
   margin: 0;
   padding: 0;
   background-color: #e8e8e8;
   font-family: Arial, Helvetica, sans-serif;
 }
-h1 {
+h1, h2, h3 {
    font-family: Arial, Helvetica, sans-serif; 
+   text-align: center;
+   color: black;'
 }
+.content {
+	height: 90%;
+	width: 300px;
+} 
 #todoIMG {
 	max-height: 50px;
 	width: auto;
@@ -21,7 +25,7 @@ h1 {
 	 overflow: hidden;
  	 background-color: #5588a3;
  	 /*padding: 20px 10px;*/
-  	 max-height: 75px;
+  	 max-height: 20%;
 }
 .footer {
 	height:40px;
@@ -33,6 +37,7 @@ h1 {
 	font-style: italic;
 	color: black;
   	padding: 20px 10px;
+  	margin-bottom: 5px;
 }
 
 .header a {
@@ -91,4 +96,14 @@ font-family: cursive;
 	background: #5588a3;
 	border: none;
 	min-width: 140px;
+	color: #e8e8e8;
+}
+#todoTable {
+}
+
+.btn-custom {
+	min-width: 0px;
+	min-height: 0px;
+	margin: 0;
+	padding-top: 3px;
 }

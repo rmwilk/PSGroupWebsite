@@ -11,7 +11,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
     <!-- / Header and Footer -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css"  href="../styles/page1.css">
+    <link rel="stylesheet" type="text/css"  href="../styles/index.css">
     <link rel="stylesheet" type="text/css"  href="../styles/global.css">
     <script src="../scripts/scripts.js"></script>
    <!-- <source src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> -->
@@ -21,7 +21,6 @@
 	<img id="todoIMG" src="../images/taskListIcon.jpg" width="150" />
 	<h1 class="head">THE TRACKER</h1>
 	  <div class="header-right">
-	          <!-- 
 	          <a href="#" class="btn btn-info btn-lg">
 	          <span class="glyphicon glyphicon-log-in"></span>
 	          	Log In
@@ -34,36 +33,38 @@
 	          	<span class="glyphicon glyphicon-check"></span> 
 	          	To-Do List
 	        </a>
-	         -->
 	  </div>
 </header>
-    <div class="container-fluid list">
+    <div class="container-fluid list content">
           <div class="row">
             <div class="col-md-4 col-sm-4 col-xs-12"></div>
             <div class="col-md-4 col-sm-4 col-xs-12">
               <form class="form-container">
-                <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif; 
-">Welcome to <br>"The Tracker"</h1>
+                <h1>
+                	Construct Your To-Do<br>List With The Tracker
+                </h1>
+                <h3>Please Sign In</h3>
                   <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email" required="required">
-                  </div>
+	                  <div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-user"></i></span>
+	                    	<input type="email" class="form-control" id="username" placeholder="Username" required="required">
+	                  </div>
+	                 </div>
                   <div class="form-group">
-                    <label for="password1">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password" required="required">
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Remember Me
-                    </label>
-                  </div>
+	                    <div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+	                    	<input type="password" class="form-control" id="password" placeholder="Password" required="required">
+	                  </div>
+	                 </div>
+                  <div class="form-group">
                   <input type="button" class="btn btn-block" value="Login" onclick="login()">
                   <br>
                   <input type="button" class="btn btn-block" value="Create Accout" onclick="toRegister()">
+                  </div>
                 </form>
             </div>
             <div class="col-md-4 col-sm-4 col-xs-12"></div>
-          </div>
+            </div>
     </div>
     <footer class="footer">
     	Copyright 2019 @ Flora Familia

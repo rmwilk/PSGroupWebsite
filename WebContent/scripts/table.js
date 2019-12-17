@@ -18,13 +18,15 @@ function appendRow() {
     var checkBox = '<input type="checkbox" class="custom-control-input" id="defaultChecked2" onclick="crossOut(\'' + row.id + '\')" value="no">';
     
     //Create delete
-    var deleteButton = '<button class="btn btn-secondary type="button" onclick="deleteRow(this)"><span class="glyphicon glyphicon-trash"></span></button>';
+    var deleteButton = '<button class="btn btn-xs btn-custom"  type="button" onclick="deleteRow(this)"><span class="glyphicon glyphicon-trash"></span></button>';
 
     cell1.innerHTML = checkBox;
     cell2.innerHTML = document.getElementById("activity").value;
     cell3.innerHTML = document.getElementById("description").value;
     cell4.innerHTML = document.getElementById("priority").value;
     cell5.innerHTML = deleteButton;
+    
+    // reset fields
     document.getElementById("activity").value = "";
     document.getElementById("description").value = "";
     document.getElementById("priority").value = "Normal";

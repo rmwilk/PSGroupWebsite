@@ -42,47 +42,65 @@
 	        </a>
 		  </div>
 	</header>
-	<div class="form-container list">
-    <form>
-        <label for="activity">Activity</label>
-        <input type="text" id="activity" name="firstname" pattern="^[a-z ,.'-]+$" title="Enter a activity" required>
-		
-		<label for="priority">Priority</label>
-		<select id="priority" name="priority">
-			<option value="Normal" selected>Normal</option>
-			<option value="High">High</option>			
-		</select>
-        <label for="description">Description</label>
-        <input type="text" id="description" name="lastname" pattern="^[a-z ,.'-]+$" title="Enter a description"
-            required>
-
-        <button type="button" onclick=appendRow()>Add</button>
-
-    </form>
-
-    <br />
-
-    <table id="todoTable"  class="table table-striped">
-
-        <thead>
-            <th><span class="glyphicon glyphicon-check"></span></th>
-            <th >Activity</th>
-            <th>Description</th>
-            <th>Priority</th>
-            <th>Delete</th>
-        </thead>
-        <tbody>
-            <!-- <tr>
-                <td>this checkbox</td>
-                <td>activity</td>
-                <td>description</td>
-                <td>priority</td>
-                <td>deleteme</td>
-            </tr> -->
-        </tbody>
-
-    </table>
-    </div>
+	<div class=" container-fluid ">
+		<div class="row">
+		<div class="col-md-4 col-sm-4 col-xs-12"></div>
+         <div class="col-md-4 col-sm-4 col-xs-12">
+         <div class="form-container">
+	    <form>
+	    <h2>Your To-Do List</h2>
+	    	<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+			        <input type="text" id="activity" pattern="^[a-z ,.'-]+$" 
+			        	title="Enter a activity" class="form-control"  placeholder="Activity">
+		        </div>
+		    </div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-commenting"></i></span>
+			        <input type="text" id="description"  pattern="^[a-z ,.'-]+$" 
+			        	title="Enter a description" class="form-control"  placeholder="Description of Activity">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<label for="priority">Priority
+					<select id="priority" name="priority" class="form-control">
+						<option value="Normal" selected>Normal</option>
+						<option value="High">High</option>			
+					</select>
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+		    	<input type="button" class="btn btn-block" onclick="appendRow()" value="Add">
+		    </div>
+			</form>
+	    <br />
+	    <table id="todoTable"  class="table table-striped">
+	        <thead>
+	            <th><span class="glyphicon glyphicon-check"></span></th>
+	            <th >Activity</th>
+	            <th>Description</th>
+	            <th>Priority</th>
+	            <th>Delete</th>
+	        </thead>
+	        <tbody>
+	            <!-- <tr>
+	                <td>this checkbox</td>
+	                <td>activity</td>
+	                <td>description</td>
+	                <td>priority</td>
+	                <td>deleteme</td>
+	            </tr> -->
+	        </tbody>
+	    </table>
+	    </div>
+		</div>
+         <div class="col-md-4 col-sm-4 col-xs-12"></div>
+         </div>
+         </div>
 	<footer class="footer">
 		Copyright 2019 @ Flora Familia
 	</footer>

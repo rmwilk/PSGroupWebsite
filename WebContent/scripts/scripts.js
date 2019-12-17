@@ -3,7 +3,10 @@ function $(element) {
 }
 
 function login() {
-	alert("Welcome " + $("email").value + "!");
+	if(true) {
+		
+	}
+	alert("Welcome " + $("username").value + "!");
 	document.cookie = `email="$('email').value"`;
 	window.location ="./todo.html";	
 }
