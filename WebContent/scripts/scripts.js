@@ -51,7 +51,7 @@ function register() {
 	}
 	
 	else if(password == confirm && confirm.length > 0 && password.length > 0){
-		window.location = "./todo.html";
+		window.location = "./index.html";
 	}
 	else {
 		alert("Passwords do not match");
