@@ -5,19 +5,19 @@ function appendRow() {
 	var act = document.getElementById("activity").value;
 	var des = document.getElementById("description").value;
 	var regexAct = /.{1,8}/;
-	var regexDes = /.{0,32}/;
+	var regexDes = /[\s\S]{0,12}$/;
 	var flagAct = false;
 	var flagDes = false;
 	var message = "";
 	
-	if(regexAct.test(act) == false) {
-		message += "Keep an activity a non-empty name that is shorter than 8 characters.\n";
+	if(/*regexAct.test(act) == false*/!(act.length > 0 && act.length < 12 )) {
+		message += "Keep an activity a non-empty name that is shorter than 12 characters.\n";
 		flagAct = true;
 	}
 	
-	if(regexDes.test(des) == false) {
-		message += "Keep a description that is shorter than 16 characters.";
-		flagAct = true;
+	if(/*regexDes.test(des) == false*/!(des.length >= 0 && des.length < 30)) {
+		message += "Keep a description that is shorter than 30 characters.";
+		flagDes = true;
 	}
 	
 	if(!flagAct && !flagDes){  /* If both flags are false */
@@ -52,6 +52,9 @@ function appendRow() {
 	}
 	else  {
 		alert(message);
+		document.getElementById("activity").value = "";
+		document.getElementById("description").value = "";
+		document.getElementById("priority").value = "Normal";
 	}
 }
 
