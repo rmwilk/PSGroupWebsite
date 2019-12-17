@@ -5,17 +5,17 @@ function appendRow() {
 	var act = document.getElementById("activity").value;
 	var des = document.getElementById("description").value;
 	var regexAct = /.{1,8}/;
-	var regexDes = /.{0,16}/;
+	var regexDes = /.{0,32}/;
 	var flagAct = false;
 	var flagDes = false;
 	var message = "";
 	
-	if(!regexAct.test(act)) {
+	if(regexAct.test(act) == false) {
 		message += "Keep an activity a non-empty name that is shorter than 8 characters.\n";
 		flagAct = true;
 	}
 	
-	if(!regexDes.test(des)) {
+	if(regexDes.test(des) == false) {
 		message += "Keep a description that is shorter than 16 characters.";
 		flagAct = true;
 	}

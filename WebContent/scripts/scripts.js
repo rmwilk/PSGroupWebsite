@@ -9,13 +9,13 @@ function login() {
 	var input = $("username").value;
 	var message = "";
 	
-	if(!regex.test(input)) {
+	if(regex.test(input) == false) {
 		validUser = false;
 		message += "Invalid username.\n";
 	}
 	
 	input = $("password").value;
-	if(!regex.test(input)){
+	if(regex.test(input) == false){
 		validPass = false;
 		message += "Invalid password.\n";
 	}
@@ -37,10 +37,20 @@ function toRegister() {
 
 function register() {
 	var username = $("username").value;
-	var email = $("email").value;
+	//var email = $("email").value;
 	var password = $("password").value;
 	var confirm = $("confirm").value;
-	if(password == confirm && confirm.length > 0 && password.length > 0){
+	
+	var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/; /* Regular expression to verify email syntax */
+	var address = document.getElementById("email").value;
+	if (reg.test(address) == false)
+	{
+	alert('Invalid Email Address');
+	document.getElementById("email").value = "";
+	return (false);
+	}
+	
+	else if(password == confirm && confirm.length > 0 && password.length > 0){
 		window.location = "./todo.html";
 	}
 	else {
@@ -50,9 +60,17 @@ function register() {
 	}
 }
 
+/*
+var checkActivity = document.getElementById("activity");
+checkActivity.addEventListener("keyup", function (e) {
+    if (e.keyCode === 13) {
+        register();
+    }
+});
 
 
-/*if($("password").value != "") {
+
+if($("password").value != "") {
 	alert("Welcome " + $("username").value + "!");
 	document.cookie = `username="$('username').value"`;
 	window.location ="./todo.html";	

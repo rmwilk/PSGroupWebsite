@@ -101,7 +101,8 @@ display: inline-block;
 	min-width: 140px;
 	color: #e8e8e8;
 }
-#todoTable {
+#todoTable > tbody > td {
+	word-wrap: break-word;
 }
 
 .btn-custom {
@@ -109,4 +110,12 @@ display: inline-block;
 	min-height: 0px;
 	margin: 0;
 	padding-top: 3px;
+}
+@media (min-width: 768px){
+	.col-sm-4-out {
+	    width: 15%;
+	}
+	.col-sm-4-mid {
+	 	width: 70%;
+	}
 }
