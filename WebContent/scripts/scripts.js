@@ -49,8 +49,8 @@ function register() {
 	document.getElementById("email").value = "";
 	return (false);
 	}
-	
 	else if(password == confirm && confirm.length > 0 && password.length > 0){
+		alert("Thanks for making an account " + username + "!\n\nYou can now login.");
 		window.location = "./index.html";
 	}
 	else {
