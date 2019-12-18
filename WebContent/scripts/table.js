@@ -10,12 +10,12 @@ function appendRow() {
 	var flagDes = false;
 	var message = "";
 	
-	if(/*regexAct.test(act) == false*/!(act.length > 0 && act.length < 12 )) {
+	if(/*regexAct.test(act) == false*/!(act.length > 0 && act.length < 13 )) {
 		message += "Keep an activity a non-empty name that is shorter than 12 characters.\n";
 		flagAct = true;
 	}
 	
-	if(/*regexDes.test(des) == false*/!(des.length >= 0 && des.length < 30)) {
+	if(/*regexDes.test(des) == false*/!(des.length >= 0 && des.length < 31)) {
 		message += "Keep a description that is shorter than 30 characters.";
 		flagDes = true;
 	}
